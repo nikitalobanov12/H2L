@@ -1,0 +1,94 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+#portfolio { 
+  min-height: 100vh;
+}
+
+.portfolio-slide {
+    background: #fff;
+  height: calc(100vh - 120px);
+  width: 100%;
+
+transition: all 0.6s ease;
+opacity: 1;
+  position: sticky;
+  top: 120px;
+    z-index: 1;
+
+}
+
+.portfolio-image {
+  height: calc(100vh - 120px);
+  width: 100%;
+  object-fit: cover;
+  object-position: bottom;
+  z-index: -1;
+  opacity: 0.3;
+  position: absolute;
+}
+.portfolio-image.middle{
+    object-position: center;
+}
+.words {
+  max-width: 1500px;
+  width: 100%;
+  height: 100%;
+    margin: 0 auto;
+    padding: 10em 1em;
+}
+.project__title{
+    font-size: 3rem;
+    font-weight: 500;
+    color: #000;
+    margin-bottom: 0em;
+}
+.project__link{
+    text-decoration: none;
+    color: #fff;
+    font-size: 1.5rem;
+    font-weight: 500;
+    padding: 1em 2em;
+    margin-top: 4em;
+    position: relative;
+    display: inline-block;
+    background: #000;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+    border: 1px solid #fff;
+
+}
+.contact__link{
+    text-decoration: none;
+    color: #fff;
+    font-size: 1.5rem;
+    font-weight: 500;
+    padding: 1em 2em;
+    margin-top: 0.5em;
+    position: relative;
+    display: inline-block;
+    background: #000;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+    border: 1px solid #fff;
+}
+
+.project__link:hover,
+.contact__link:hover{
+    background: #fff;
+    color: #000;
+    border: 1px solid #000;
+}
+footer{
+    z-index: 10;
+}
+.bottom{
+    background: #e1e1e1;
+    z-index: 10;
+    position: relative;
+}
