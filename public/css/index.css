@@ -287,19 +287,15 @@ MEDIA QUERIES
 */
 
 @media (max-width: 768px) {
-  *{
-    font-size: 12px;
-  }
-  #services {
-    flex-direction: column;
-    padding: 5em 1em 1em;
-  } 
+  
+ 
   .hero {
     height: calc(100vh - 200px);
   }
   .hero__subtitle {
-    font-size: 1em;
+    font-size: 2em;
     text-align: center;
+    padding: 0 1em;
   }
   .hamburger {
     display: block;
@@ -350,6 +346,7 @@ MEDIA QUERIES
   }
   .project__description {
     margin: 0 0 2em;
+    font-size: 1.5em;
   }
   .project__link {
     margin: 0 auto;
@@ -362,6 +359,13 @@ MEDIA QUERIES
   }
   .services-slide {
     max-width: 100%;
+   
+  }
+  .services__description{
+    font-size: 1.5em;
+  }
+  #services{
+     flex-direction: column;
   }
 
 }
